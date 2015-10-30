@@ -1,0 +1,21 @@
+.sidebar {
+  border-left: $border;
+  .textwidget {
+    text-align: center;
+      .btn-primary {
+        width: 100%;
+      }
+  }
+  .sci-address-city, .sci-address-state, .sci-address-zip {
+    display: inline-block;
+  }
+  .sci-address-city::after {
+    content: ", ";
+  }
+  .sci-contact > p {
+    font-weight: 500;
+  }
+  img {
+    padding: 15px 0;
+  }
+}

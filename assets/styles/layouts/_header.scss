@@ -1,0 +1,63 @@
+.header-contact {
+  border-bottom: solid 1px $brand-primary-shadow;
+  display: inline-block;
+  width: 100%;
+  a {
+    border-left: solid 1px $brand-primary-shadow;
+    font-size: 12px;
+    padding: 10px 20px 10px 10px;
+
+    &:first-child {
+      border-right: solid 1px $brand-primary-shadow;
+    }
+
+    &:hover, &:active, &:focus, &:visited {
+      text-decoration: none;
+    }
+    .fa {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }
+}
+.navbar-fixed-top {
+  background-color: $brand-primary;
+  height: 130px;
+
+  .brand {
+    font-size: 20px;
+    font-weight: 100;
+    position: relative;
+      top: 22px;
+    text-transform: uppercase;
+
+    &:hover, &:active, &:focus, &:visited {
+      text-decoration: none;
+    }
+  }
+  ul {
+    float: right;
+    position: relative;
+      bottom: 12px;
+    li {
+      display: inline-block;
+    }
+
+    .current_page_item{
+      background-color: #B96B43;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+    a {
+      &:hover, &:active, &:focus, &:visited {
+        background-color: #B96B43;
+        border-radius: 3px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+  }
+}

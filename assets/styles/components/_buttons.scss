@@ -1,0 +1,8 @@
+.btn-primary {
+  background-color: $highlight;
+  border-color: darken($highlight, 5%);
+  &:hover, &:active, &:focus, &:visited, .active {
+    background-color: darken($highlight, 5%);
+    border-color: darken($highlight, 10%);
+  }
+}
