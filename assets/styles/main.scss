@@ -25,6 +25,15 @@ body {
   font-family: 'Lato', sans-serif;
   padding-top: 130px;
 }
+.patients, .blog, .contact-us {
+  .wrap {
+    padding-top: 20px;
+  }
+}
+.main {
+  padding-left: 0;
+  padding-right: 0;
+}
 .wrap {
   background-color: $white;
 }

@@ -25,14 +25,14 @@
   <!-- END our services -->
 
   <div class="separator line-separator"></div>
-  <div class="col-sm-6">
+  <div class="col-sm-7">
     <h4>
       <?php $post = get_post(2); $title = apply_filters('the_title', $post->post_title); echo $title;?>
       <?php bloginfo('name'); ?>
     </h4>
     <?php get_template_part('templates/content', 'page'); ?>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-5">
     <img src="http://placehold.it/400x400" class="pull-right" alt="Garden City Primary Office">
   </div>
 <?php endwhile; ?>
