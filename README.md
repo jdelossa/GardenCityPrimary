@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
@@ -112,3 +113,7 @@ Keep track of development and community news.
 * Follow [@rootswp on Twitter](https://twitter.com/rootswp)
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+=======
+# GardenCityPrimary
+Garden City Primary theme built with Sage
+>>>>>>> b9ba2a5d1bba0e63b858b6756448d6377464c89e
