@@ -18,4 +18,67 @@
   img {
     padding: 15px 0;
   }
+  .rpwwt-widget {
+    ul {
+      li {
+        display: inline-block;
+        img {
+          margin: 0 13px;
+        }
+        a {
+          .rpwwt-post-title {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  // to override default
+  #rpwwt-recent-posts-widget-with-thumbnails-2 img {
+    height: 110px;
+    width: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar {
+    .textwidget {
+      img {
+        height: 200px;
+        width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    .textwidget {
+      img {
+        height: 140px;
+        width: 290px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    .textwidget {
+      img {
+        height: 140px;
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    .textwidget {
+      img {
+        height: 200px;
+        width: 90%;
+      }
+    }
+  }
 }

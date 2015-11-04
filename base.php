@@ -35,6 +35,5 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
-    <script type="text/javascript" src="<?= esc_url(home_url('/')); ?>assets/scripts/gmaps.js"></script>
   </body>
 </html>
