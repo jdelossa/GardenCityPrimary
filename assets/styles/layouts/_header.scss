@@ -61,4 +61,19 @@
     color: $white;
   }
 }
-@media (max-width: )
+@media (max-width: 991px){
+  .header-contact {
+    a {
+      display: inline-block;
+
+        width: 80%;
+
+      &:first-child {
+        width: 20%;
+      }
+    }
+  }
+  .navbar-fixed-top {
+
+  }
+}
