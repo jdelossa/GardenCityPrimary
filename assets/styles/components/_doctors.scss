@@ -1,0 +1,53 @@
+.blog {
+  .single-profile {
+    .entry-title, .doctor-portrait {
+      text-align: center;
+    }
+    .doctor-portrait {
+      width: 100%;
+    }
+    .entry-title {
+      background-color: $brand-primary;
+      padding: 15px 0;
+      position: relative;
+        bottom: 45px;
+        left: 25px;
+      text-transform: uppercase;
+      width: 300px;
+      a {
+        color: $white;
+        width: 300px;
+      }
+    }
+    .doctor-portrait {
+      img {
+        display: block;
+        height: 300px;
+        margin: auto;
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .blog {
+    .single-profile {
+      .entry-title {
+        left: 1px;
+        width: 280px;
+        a {
+          width: 280px;
+        }
+      }
+      .doctor-portrait {
+        img {
+          display: block;
+          height: 280px;
+          margin: auto;
+          width: 280px;
+        }
+      }
+    }
+  }
+}

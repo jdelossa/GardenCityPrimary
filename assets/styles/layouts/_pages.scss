@@ -3,7 +3,7 @@ hr {
   border-top: $border;
 }
 .page-header {
-  border-bottom: $border;
+  border-bottom: none;
 }
 .page-id-2 {
   /* the menu item */
@@ -39,6 +39,9 @@ hr {
     h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
       text-align: center;
     }
+    .page-header {
+      margin-top: 0px;
+    }
     .office {
       display: block;
       float: none !important;
@@ -50,7 +53,7 @@ hr {
 @media (max-width: 480px) {
   .main {
     .office {
-      height: 400px;
+      height: 300px;
       width: 90%;
     }
   }

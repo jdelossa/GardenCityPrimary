@@ -12,6 +12,7 @@
 @import "components/_grid";
 @import "components/_wp-classes";
 @import "components/map";
+@import "components/doctors";
 @import "layouts/_header";
 @import "layouts/_sidebar";
 @import "layouts/_footer";
@@ -37,4 +38,16 @@ body {
 }
 .wrap {
   background-color: $white;
+}
+
+@media (max-width: 991px){
+  body {
+    padding-top: 115px;
+  }
+}
+
+@media (max-width: 400px){
+  body {
+    padding-top: 105px;
+  }
 }

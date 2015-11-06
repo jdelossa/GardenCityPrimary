@@ -2,8 +2,8 @@
     <nav class="navbar-fixed-top">
       <div class="header-contact">
         <div class="container">
-        <a href="#" class="pull-right"><i class="fa fa-phone"></i> <?php echo (get_option('qs_contact_phone')); ?></a>
-        <a href="#" class="pull-right"><i class="fa fa-map-marker"></i> <?php echo (get_option('qs_contact_street')); ?>, <?php echo (get_option('qs_contact_city')); ?>, <?php echo (get_option('qs_contact_state')); ?> <?php echo (get_option('qs_contact_zip')); ?></a>
+        <a href="tel:<?php echo (get_option('qs_contact_phone')); ?>" class="pull-right"><i class="fa fa-phone"></i><span class="phone"> <?php echo (get_option('qs_contact_phone')); ?></span></a>
+        <a href="#" class="pull-right"><i class="fa fa-map-marker"></i><span class="map"> <?php echo (get_option('qs_contact_street')); ?>, <?php echo (get_option('qs_contact_city')); ?>, <?php echo (get_option('qs_contact_state')); ?> <?php echo (get_option('qs_contact_zip')); ?></span></a>
         </div>
       </div>
       <div class="nav-primary">
