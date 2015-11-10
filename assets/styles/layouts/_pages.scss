@@ -1,21 +1,7 @@
-/* The Home Page */
-hr {
-  border-top: $border;
-}
-.page-header {
-  border-bottom: none;
-}
-.page-id-2 {
-  /* the menu item */
-  #menu-item-4 > a {
-    background-color: #B96B43;
-    border-radius: 3px;
-    text-decoration: none;
-  }
-  /* the page header */
-  .page-header:first-child {
-    display: none;
-  }
+.col-centered {
+  float: none;
+  margin: auto;
+  text-align: center;
 }
 
 /* all pages */
@@ -35,6 +21,24 @@ hr {
 }
 
 /* main page */
+hr {
+  border-top: $border;
+}
+.page-header {
+  border-bottom: none;
+}
+.page-id-2 {
+  /* the menu item */
+  #menu-item-4 > a {
+    background-color: #B96B43;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+  /* the page header */
+  .page-header:first-child {
+    display: none;
+  }
+}
 .main {
   .office-margin {
     margin-top: 55px;
@@ -86,6 +90,7 @@ hr {
     }
   }
 }
+
 @media (max-width: 1200px) {
   .main {
     .office-margin {

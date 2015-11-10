@@ -27,7 +27,7 @@
   <div class="separator line-separator"></div>
 
 
-    <div class="col-md-7 office-margin">
+    <div class="col-xs-6 col-centered">
       <h4>
         <?php $post = get_post(2); $title = apply_filters('the_title', $post->post_title); echo $title;?>
         <?php bloginfo('name'); ?>
@@ -35,30 +35,11 @@
       <?php get_template_part('templates/content', 'page'); ?>
     </div>
 
-    <div class="col-md-5">
-      <img src="http://placehold.it/400x315" class="office pull-right" alt="Garden City Primary Office">
-    </div>
+<!--    <div class="col-md-5">-->
+<!--      <img src="http://placehold.it/400x315" class="office pull-right" alt="Garden City Primary Office">-->
+<!--    </div>-->
 
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="map-header">
-          <h5>We are located in <?php echo (get_option('qs_contact_city')); ?></h5>
-        </div>
-        <div class="map-pointer"></div>
-      </div>
-    </div>
-
-  <div class="col-xs-12">
-    <div class="map">
-      <div id="map"></div>
-    </div>
-
-    <!--<ul class="contact-cta">
-      <li><a href="#"><span class="label label-default"><i class="fa fa-user-md"></i> Our Physicians</span></a></li>
-      <li><a href="tel:<?php echo (get_option('qs_contact_phone')); ?>"><span class="label label-default"><i class="fa fa-phone"></i><?php echo (get_option('qs_contact_phone')); ?></span></a></li>
-    </ul>-->
-  </div>
-
+    <?php get_template_part('templates/page', 'map'); ?>
 
 <?php endwhile; ?>
 

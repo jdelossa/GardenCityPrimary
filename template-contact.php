@@ -5,16 +5,22 @@
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/page', 'header'); ?>
-    <?php get_template_part('templates/content', 'page'); ?>
 
-    <div class="map">
-        <div id="map"></div>
+    <div class="row">
+        <div class="col-xs-4 col-centered">
+            <a href="tel:<?php echo (get_option('qs_contact_phone')); ?>" class="btn btn-primary"><i class="fa fa-phone"></i> Call Us at <?php echo (get_option('qs_contact_phone')); ?></a>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-xs-7 col-centered">
+            <div class="outline">
+                <?php get_template_part('templates/content', 'page'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="62" title="Contact Us"]'); ?>
+            </div>
+        </div>
     </div>
-
-    <?php echo do_shortcode( '[contact-form-7 id="62" title="Contact Us"]' ); ?>
-
-
+    <?php get_template_part('templates/page', 'map'); ?>
 <?php endwhile; ?>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
