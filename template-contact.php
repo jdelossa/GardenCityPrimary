@@ -7,10 +7,12 @@
 <?php while (have_posts()) : the_post(); ?>
 
     <div class="row">
-        <div class="col-xs-4 col-centered">
-            <a href="tel:<?php echo (get_option('qs_contact_phone')); ?>" class="btn btn-primary"><i class="fa fa-phone"></i> Call Us at <?php echo (get_option('qs_contact_phone')); ?></a>
+        <div class="col-xs-12">
+            <div class="page-header">
+                <?php get_template_part('templates/page', 'header'); ?>
+            </div>
         </div>
-    </div><br>
+    </div>
 
     <div class="row">
         <div class="col-xs-7 col-centered">
@@ -20,7 +22,9 @@
             </div>
         </div>
     </div>
+
     <?php get_template_part('templates/page', 'map'); ?>
+
 <?php endwhile; ?>
 
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>

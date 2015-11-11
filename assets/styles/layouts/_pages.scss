@@ -26,6 +26,7 @@ hr {
 }
 .page-header {
   border-bottom: none;
+  margin: 0 10px;
 }
 .page-id-2 {
   /* the menu item */
@@ -45,7 +46,7 @@ hr {
   }
   .contact-cta {
     list-style-type: none;
-    margin: 75px auto;
+    margin: 0 auto 20px auto;
     padding-left: 0;
     text-align: center;
     li {
@@ -55,6 +56,7 @@ hr {
       a {
         text-decoration: none;
         .label {
+          box-shadow: #48483C 2px 2px 2px;
           display: block;
           font-size: 16px;
           font-weight: 400;
@@ -64,28 +66,31 @@ hr {
           margin-right: 5%;
           width: 90%;
 
-          &:first-child {
-            background-color: $highlight;
-            border-color: darken($highlight, 5%);
-            &:hover, &:active, &:focus {
-              background-color: darken($highlight, 5%);
-              border-color: darken($highlight, 10%);
-            }
-          }
-
-          &:last-child {
-            background-color: $brand-primary;
-            border-color: darken($brand-primary, 5%);
-            &:hover, &:active, &:focus {
-              //background-color: darken($highlight, 5%);
-              //border-color: darken($highlight, 10%);
-            }
-          }
           .fa {
             font-size: 20px;
             padding: 5px 20px 5px 5px;
           }
         }
+        .label-default {
+          background-color: darken($highlight, 5%);
+          border-color: darken($highlight, 10%);
+
+          &:hover, &:active, &:focus, &:visited, {
+            background-color: darken($highlight, 10%);
+            border-color: darken($highlight, 15%);
+          }
+        }
+
+        .label-primary {
+          background-color: darken($brand-primary, 5%);
+          border-color: darken($brand-primary, 10%);
+
+          &:hover, &:active, &:focus, &:visited, {
+            background-color: darken($brand-primary, 10%);
+            border-color: darken($brand-primary, 15%);
+          }
+        }
+
       }
     }
   }
@@ -117,14 +122,42 @@ hr {
       margin-top: 0px;
       margin-bottom: 30px;
     }
+
+    .contact-cta {
+      li {
+        a {
+          .label-default, .label-primary {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }
 
+@media (max-width: 767px) {
+  .main {
+    .contact-cta {
+      li {
+        display: block;
+        margin: 10px auto;
+        width: 60%;
+      }
+    }
+  }
+}
 @media (max-width: 480px) {
   .main {
     .office {
       height: 300px;
       width: 90%;
+    }
+    .contact-cta {
+      li {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
     }
   }
 }

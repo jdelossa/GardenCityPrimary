@@ -1,8 +1,9 @@
 .btn-primary {
-  background-color: $highlight;
-  border-color: darken($highlight, 5%);
+  background-color: darken($highlight, 5%);
+  border-color: darken($highlight, 10%);
+  box-shadow: #48483C 2px 2px 1px;
   &:hover, &:active, &:focus, &:visited, .active {
-    background-color: darken($highlight, 5%);
-    border-color: darken($highlight, 10%);
+    background-color: darken($highlight, 10%) !important;
+    border-color: darken($highlight, 15%) !important;
   }
 }
