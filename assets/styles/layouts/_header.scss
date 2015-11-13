@@ -1,14 +1,16 @@
 .header-contact {
-  border-bottom: solid 1px $brand-primary-shadow;
+  background-color: $highlight;
+  border-bottom: solid 1px darken($highlight, 5%);
   display: inline-block;
+  height: 35px;
   width: 100%;
   a {
-    border-left: solid 1px $brand-primary-shadow;
+    border-left: solid 1px darken($highlight, 5%);
     font-size: 12px;
-    padding: 10px 20px 10px 10px;
+    padding: 5px 20px 5px 10px;
 
     &:first-child {
-      border-right: solid 1px $brand-primary-shadow;
+      border-right: solid 1px darken($highlight, 5%);
     }
 
     &:hover, &:active, &:focus, &:visited {
@@ -25,10 +27,10 @@
   height: 100px;
 
   .brand {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 100;
     position: relative;
-      top: 7px;
+      top: 11px;
     text-transform: uppercase;
 
     &:hover, &:active, &:focus, &:visited {
@@ -38,7 +40,7 @@
   ul {
     float: right;
     position: relative;
-      bottom: 26px;
+      bottom: 25px;
     li {
       display: inline-block;
     }
@@ -49,6 +51,7 @@
       text-decoration: none;
     }
     a {
+      font-size: 16px;
       &:hover, &:active, &:focus, &:visited {
         background-color: #B96B43;
         border-radius: 3px;

@@ -22,10 +22,11 @@
 @import "layouts/_posts";
 @import "layouts/_tinymce";
 @import "layouts/jumbotron";
+@import "layouts/insurances";
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $off-white;
+  background-color: $white;
   font-family: 'Lato', sans-serif;
   padding-top: 100px;
 }

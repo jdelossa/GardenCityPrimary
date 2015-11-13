@@ -1,11 +1,23 @@
 
   .content-info {
+    .logo {
+      text-align: center;
+      width: 100%;
+      img {
+        text-align: center;
+        width: 275px;
+      }
+    }
     .container {
       background-color: $white;
     }
-    p {
+    p,a  {
       color: $brand-primary-shadow;
       padding: 15px 0;
       text-transform: uppercase;
+
+      .privacy {
+        color: $brand-primary-shadow;
+      }
     }
   }
