@@ -1,31 +1,87 @@
-.blog {
-  .single-profile {
-    .entry-title, .doctor-portrait {
-      text-align: center;
-    }
-    .doctor-portrait {
+/**************** Single Doctor Page Only ****************/
+.single {
+  .entry-title {
+    border-bottom: none;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .speciality {
+    position: relative;
+    bottom: 25px;
+  }
+  .health-grades, .vitals {
+    margin-bottom: 15px;
+  }
+  .single-image {
+    border-radius: 3px;
+    margin-bottom: 30px;
+  }
+  .physician-information {
+    .header {
+      background-color: $off-white;
+      color: darken($highlight, 10%);
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px 10px;
       width: 100%;
     }
+    p {
+      color: $highlight;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+    }
+    .col-lg-3 {
+      padding-left: 0;
+    }
+
+  }
+}
+
+.blog {
+  .single-profile {
+    .col-sm-5, .col-sm-7 {
+      padding-left: 0;
+      padding-right: 0;
+    }
     .entry-title {
-      background-color: $brand-primary;
-      padding: 15px 0;
-      position: relative;
-        bottom: 45px;
-        left: 25px;
+      background-color: $off-white;
+      padding: 15px;
+      text-align: left;
       text-transform: uppercase;
-      width: 300px;
       a {
-        color: $white;
+        color: $highlight;
         width: 300px;
+      }
+      .specialty {
+        color: $highlight;
+        float: right;
+        font-size: 12px;
       }
     }
     .doctor-portrait {
       img {
         display: block;
-        height: 300px;
-        margin: auto;
-        width: 300px;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 15px;
       }
+    }
+    .office-hours {
+      p {
+        line-height: 25px;
+        padding-left: 5px;
+
+        &:nth-child(even){
+          background-color: $off-white;
+        }
+      }
+    }
+    .btn-primary {
+      float: right;
+      position: relative;
+        right: 10px;
+        top: 58px;
     }
   }
 }

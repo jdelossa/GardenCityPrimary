@@ -1,6 +1,7 @@
 
 /* the jumbotron */
 .container .jumbotron {
+  //background-image: url('http://localhost:8888/gardencityprimary/wp-content/uploads/2015/11/happy-family.jpg');
   border-bottom: $brand-primary solid 2px;
   border-radius: 0;
   height: 400px;
@@ -9,11 +10,11 @@
     position: relative;
       top: 45px;
     .description {
-      color: $brand-primary;
+      color: $brand-primary-shadow;
       text-transform: capitalize;
     }
     .mission-statement {
-      color: $brand-primary;
+      color: $brand-primary-shadow;
       padding: 20px 0 40px 0;
       p {
         font-size: 16px;

@@ -21,9 +21,12 @@
   .rpwwt-widget {
     ul {
       li {
-        display: inline-block;
+        float: left;
+        margin: 0;
+        width: 33%;
         img {
-          margin: 0 13px;
+          margin: 0;
+
         }
         a {
           .rpwwt-post-title {
@@ -33,10 +36,19 @@
       }
     }
   }
+  .widget_sci_info_widget {
+    margin-bottom: 20px;
+  }
+  .recent-posts-widget-with-thumbnails {
+    h3 {
+      display: none;
+    }
+  }
   // to override default
   #rpwwt-recent-posts-widget-with-thumbnails-2 img {
-    height: 110px;
-    width: 90px;
+    height: 115px;
+    margin-left: 10%;
+    width: 90%;
   }
 }
 // remove sidebar from blog
