@@ -15,7 +15,8 @@
   }
   .single-image {
     border-radius: 3px;
-    margin-bottom: 30px;
+    height: 300px;
+    width: 300px;
   }
   .physician-information {
     .header {
@@ -35,6 +36,16 @@
       padding-left: 0;
     }
 
+  }
+  .single-office-hours {
+    p {
+      float: left;
+      width: 50%;
+
+      &:first-child {
+        display: none;
+      }
+    }
   }
 }
 
@@ -69,7 +80,7 @@
     }
     .office-hours {
       p {
-        line-height: 25px;
+        line-height: 22px;
         padding-left: 5px;
 
         &:nth-child(even){
@@ -90,18 +101,21 @@
   .blog {
     .single-profile {
       .entry-title {
-        left: 1px;
-        width: 280px;
-        a {
-          width: 280px;
+        .specialty {
+          font-size: 10px;
+          position: relative;
+            top: 2px;
         }
       }
       .doctor-portrait {
         img {
-          display: block;
-          height: 280px;
-          margin: auto;
-          width: 280px;
+          height: 175px;
+          width: 175px;
+        }
+      }
+      .office-hours {
+        p {
+          line-height: 19px;
         }
       }
     }

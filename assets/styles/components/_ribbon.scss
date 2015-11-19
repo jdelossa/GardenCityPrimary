@@ -96,3 +96,9 @@
   border-top: 29px solid darken($highlight, 5%);
   border-bottom: 29px solid darken($highlight, 5%);
 }
+
+@media (max-width: 1200px) {
+  .ribbon-container {
+    width: 324px;
+  }
+}
