@@ -68,6 +68,7 @@
   .header-contact {
     a {
       display: inline-block;
+      padding: 3px 20px 3px 10px;
       width: 48px;
       .fa {
         font-size: 18px;
@@ -82,12 +83,13 @@
     }
   }
   .navbar-fixed-top {
+    height: 90px;
     .brand {
       font-size: 16px;
-      top: -40px;
+      top: -35px;
     }
     ul {
-      bottom: 22px;
+      bottom: 21px;
       float: none;
       margin: auto;
       text-align: center;
@@ -103,8 +105,16 @@
     }
   }
   .navbar-fixed-top {
+    height: 80px;
     .brand {
       font-size: 14px;
+    }
+    ul {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
@@ -116,7 +126,6 @@
     }
   }
   .navbar-fixed-top {
-    height: 90px;
     .brand {
       font-size: 11px;
     }

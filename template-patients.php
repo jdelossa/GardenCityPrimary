@@ -9,6 +9,11 @@
     <?php get_template_part('templates/content', 'page'); ?>
 
     <div class="page-header">
+        <h3><?php $post = get_post(55); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
+    </div>
+    <?php $post = get_post(55); $content = apply_filters('the_content', $post->post_content); echo $content;?>
+
+    <div class="page-header">
         <h3><?php $post = get_post(57); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
     </div>
     <?php $post = get_post(57); $content = apply_filters('the_content', $post->post_content); echo $content;?>

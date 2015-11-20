@@ -4,10 +4,10 @@
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <span class="specialty"><?= types_render_field("doc-special", array('raw' => 'true')); ?></span>
         </h5>
-        <div class="col-sm-5">
+        <div class="col-md-5">
             <a href="<?php the_permalink(); ?>" class="doctor-portrait"><?php the_post_thumbnail( 'small' ); ?></a>
         </div>
-        <div class="col-sm-7">
+        <div class="col-md-7">
             <div class="office-hours">
                 <p><?= types_render_field("doc-hours", array('raw' => 'true')); ?>
             </div>

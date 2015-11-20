@@ -41,10 +41,6 @@
     p {
       float: left;
       width: 50%;
-
-      &:first-child {
-        display: none;
-      }
     }
   }
 }
@@ -115,7 +111,32 @@
       }
       .office-hours {
         p {
-          line-height: 19px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px){
+  .blog {
+    .single-profile {
+      .doctor-portrait {
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog{
+    .single-profile {
+      .entry-title {
+        .specialty {
+          font-size: 6px;
+          top: 6px;
         }
       }
     }

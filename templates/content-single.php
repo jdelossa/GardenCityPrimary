@@ -13,7 +13,8 @@
         <p class="header">Specialty: </p><p><?= types_render_field("doc-special", array('raw' => 'true')); ?></p>
 
         <?php if (types_render_field("doc-hours", array('raw' => 'true'))) { ?>
-          <p class="header">Office Hours: </p><span class="single-office-hours"><p><?= types_render_field("doc-hours", array('raw' => 'true')); ?></p></span>
+          <p class="header">Office Hours: </p><span class="single-office-hours">
+            <?= types_render_field("doc-hours", array('raw' => 'true')); ?></span>
         <?php } ?>
 
         <?php if (types_render_field("doc-email", array('raw' => 'true'))) { ?>

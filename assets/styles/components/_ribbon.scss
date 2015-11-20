@@ -102,3 +102,12 @@
     width: 324px;
   }
 }
+@media (max-width: 991px) {
+  .ribbon-container {
+    right: 18px;
+    width: 767px;
+  }
+  .ribbon-container a:after {
+    border-top: none;
+  }
+}

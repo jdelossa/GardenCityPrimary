@@ -58,6 +58,24 @@
     }
   }
 }
+@media (max-width: 991px){
+  .sidebar {
+    margin-top: 25px;
+    text-align: center;
+    width: 100%;
+    .textwidget {
+      text-align: center;
+    }
+    img {
+      width: 400px;
+    }
+    // to override default
+    #rpwwt-recent-posts-widget-with-thumbnails-2 img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}
 // remove sidebar from blog
 .blog {
   .main {

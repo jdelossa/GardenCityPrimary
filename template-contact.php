@@ -13,7 +13,7 @@
             <div class="map">
                 <div id="map"></div>
             </div>
-            <?php echo do_shortcode('[contact-form-7 id="62" title="Contact Us"]'); ?>
+            <!--<?php echo do_shortcode('[contact-form-7 id="62" title="Contact Us"]'); ?>-->
         </div>
     </div>
 
