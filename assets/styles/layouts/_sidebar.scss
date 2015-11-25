@@ -22,11 +22,12 @@
     ul {
       li {
         float: left;
-        margin: 0;
+        margin: auto;
+        text-align: center;
         width: 33%;
         img {
-          margin: 0;
-
+          margin: auto;
+          text-align: center;
         }
         a {
           .rpwwt-post-title {
@@ -73,6 +74,34 @@
     #rpwwt-recent-posts-widget-with-thumbnails-2 img {
       height: 200px;
       width: 200px;
+    }
+  }
+}
+@media (max-width: 767px){
+  .sidebar {
+    // to override default
+    .rpwwt-widget {
+      ul {
+        li {
+          img {
+            margin: auto;
+          }
+
+        }
+      }
+    }
+    #rpwwt-recent-posts-widget-with-thumbnails-2 img {
+      height: 100%;
+      margin-left: 15%;
+      margin-right: 15%;
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 480px){
+  .sidebar {
+    img {
+      width: 295px;
     }
   }
 }

@@ -107,11 +107,8 @@ hr {
 }
 @media (max-width: 991px){
   .main, .sidebar {
-    h1, h2, h3, h4, h5, h6, p, ul, li, a, span {
-      text-align: center;
-    }
     .page-header {
-      margin-top: 0px;
+      margin-top: 0;
     }
     .office {
       display: block;
@@ -121,7 +118,7 @@ hr {
   }
   .main {
     .office-margin {
-      margin-top: 0px;
+      margin-top: 0;
       margin-bottom: 30px;
     }
 
