@@ -1,13 +1,14 @@
 <!-- tron - o - jumb (egduj t'nod)-->
-<div class="jumbotron">
+<?php echo do_shortcode('[image-carousel]'); ?>
+<!--<div class="jumbotron">
     <div class="content">
-        <h2 class="description"><?php echo get_bloginfo ( 'description' );  ?></h2>
+        <h3 class="description"><?php echo get_bloginfo ( 'description' );  ?></h3>
         <div class="mission-statement">
             <?php $post = get_post(18); $content = apply_filters('the_content', $post->post_content); echo $content;?>
         </div>
         <p><a class="btn btn-primary" href="<?= esc_url(home_url('/')); ?>/contact-us" role="button">Request An Appointment</a></p>
     </div>
-</div>
+</div>-->
 <!-- END tron - o - jumb -->
 
 <!-- our services -->

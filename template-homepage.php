@@ -17,6 +17,11 @@
         <?php bloginfo('name'); ?>
       </h4>
       <?php get_template_part('templates/content', 'page'); ?>
+
+      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/Reception.jpg" alt="" height="145px" width="100%"></div>
+      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/PatientRoom.jpg" alt="" height="145px" width="100%"></div>
+      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/OfficePhoto2.jpg" alt="" height="145px" width="100%"></div>
+
     </div>
 
     <?php get_template_part('templates/page', 'map'); ?>
@@ -25,6 +30,7 @@
       <li><a href="<?= esc_url(home_url('/')); ?>/contact-us"><span class="label label-default">Request An Appointment</span></a></li>
       <li><a href="tel:<?php echo (get_option('qs_contact_phone')); ?>"><span class="label label-primary">Call Us: <?php echo (get_option('qs_contact_phone')); ?></span></a></li>
     </ul>
+
 
 <?php endwhile; ?>
 

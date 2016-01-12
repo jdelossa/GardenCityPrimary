@@ -33,6 +33,22 @@
 }
 .map {
   #map {
-    height: 250px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 991px){
+  .map {
+    #map {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .map {
+    #map {
+      height: 250px;
+    }
   }
 }

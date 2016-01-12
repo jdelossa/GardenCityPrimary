@@ -50,6 +50,18 @@ body {
   body {
     padding-top: 90px;
   }
+  .home .main img {
+    margin: 5px;
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .garden-office {
+    text-align: center;
+    img {
+      margin: 10px;
+    }
+  }
 }
 @media (max-width: 480px){
   body {
