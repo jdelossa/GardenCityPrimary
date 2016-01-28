@@ -10,9 +10,12 @@ use Roots\Sage\Wrapper;
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
     <!--[if lt IE 9]>
-      <div class="alert alert-warning">
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
-      </div>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/scripts/html5.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/scripts/respond.min.js"></script>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/ie.css" type="text/css"/>
+    <div class="alert alert-warning">
+      <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+    </div>
     <![endif]-->
     <?php
       do_action('get_header');
@@ -35,5 +38,6 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

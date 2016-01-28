@@ -28,7 +28,11 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $off-white;
   font-family: 'Lato', sans-serif;
+  font-size: 16px;
   padding-top: 100px;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: static;
 }
 .patients, .blog, .single, .page-id-94, .contact-us {
   .wrap {
@@ -39,7 +43,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   p {
-    line-height: 30px;
+    line-height: 25px;
   }
 }
 .wrap {
@@ -50,7 +54,7 @@ body {
   body {
     padding-top: 90px;
   }
-  .home .main img {
+  .home .main .col-sm-8 img {
     margin: 5px;
     width: 70%;
   }

@@ -1,84 +1,47 @@
 
 /* the jumbotron */
-//.container .jumbotron {
-//  background-image: url('http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/OfficeInternal2.jpg');
-//  background-repeat: no-repeat;
-//  background-position: center -85px;
-//  background-size: cover;
-//  border-bottom: $brand-primary solid 2px;
-//  border-radius: 0;
-//  height: 400px;
-//
-//  .content {
-//    background-color: rgba(0, 0, 0, 0.5);
-//    border-radius: 3px;
-//    padding: 20px;
-//    position: relative;
-//    top: 20px;
-//    width: 520px;
-//    .description {
-//      color: $white;
-//      text-transform: capitalize;
-//    }
-//    .mission-statement {
-//      padding: 20px 0 40px 0;
-//      p {
-//        color: $white;
-//        font-size: 16px;
-//      }
-//    }
-//    a {
-//      color: $white !important;
-//    }
-//  }
-//}
+.container .jumbotron {
+  background-image: url('http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/OfficeInternal2.jpg');
+  background-repeat: no-repeat;
+  background-position: center -85px;
+  background-size: cover;
+  border-bottom: $brand-primary solid 2px;
+  border-radius: 0;
+  height: 300px;
 
-/* carousel */
-
-.carousel-inner {
-  height: 450px;
+  .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    width: 520px;
+    .description {
+      color: $white;
+      text-transform: capitalize;
+    }
+    .mission-statement {
+      padding: 20px 0 40px 0;
+      p {
+        color: $white;
+        font-size: 16px;
+      }
+    }
+    a {
+      color: $white !important;
+    }
+  }
 }
-
-.carousel-inner>.item>a>img, .carousel-inner>.item>img {
-  width: 100%;
-}
-
-.carousel-control .fa-chevron-left,
-.carousel-control .fa-chevron-right,
-.carousel-control .icon-next,
-.carousel-control .icon-prev {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-  z-index: 5;
-  display: inline-block;
-}
-
-.carousel-control .fa-chevron-left,
-.carousel-control .icon-prev {
-  left: 50%;
-  margin-left: -10px;
-}
-
-.carousel-caption {
-  background: rgba(255,255,255,0.5);
-  width: 100%;
-  top: 335px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
 
 /* the services below jumbotron */
 .services {
   list-style-type: none;
-  margin: 75px 0;
   padding-left: 0;
   li {
     display: inline-block;
+    padding: 10px 0;
     text-align: center;
-    width: 33%;
+    width: 100%;
     a {
       text-decoration: none;
       .label {
@@ -138,31 +101,6 @@
         }
       }
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carousel-control .fa-chevron-left,
-  .carousel-control .icon-prev {
-    margin-left: -15px;
-  }
-  .carousel-control .fa-chevron-left,
-  .carousel-control .fa-chevron-right,
-  .carousel-control .icon-next,
-  .carousel-control .icon-prev {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    font-size: 30px;
-  }
-  .carousel-control .fa-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next,
-  .carousel-control .icon-prev {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    font-size: 30px;
   }
 }
 

@@ -11,18 +11,17 @@
   <div class="separator line-separator"></div>
 
 
-    <div class="col-sm-8 col-centered">
-      <h4>
+    <div class="col-sm-8">
+      <h3>
         <?php $post = get_post(2); $title = apply_filters('the_title', $post->post_title); echo $title;?>
         <?php bloginfo('name'); ?>
-      </h4>
+      </h3>
       <?php get_template_part('templates/content', 'page'); ?>
-
-      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/Reception.jpg" alt="" height="145px" width="100%"></div>
-      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/PatientRoom.jpg" alt="" height="145px" width="100%"></div>
-      <div class="col-md-4"><img src="http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/OfficePhoto2.jpg" alt="" height="145px" width="100%"></div>
-
     </div>
+
+  <div class="col-md-4">
+    <img src="/gardencityprimary/wp-content/uploads/2016/01/Reception.jpg" style="margin-top: 60px;" alt="" height="100%" width="100%" data-featherlight="/gardencityprimary/wp-content/uploads/2016/01/Reception.jpg">
+  </div>
 
     <?php get_template_part('templates/page', 'map'); ?>
     

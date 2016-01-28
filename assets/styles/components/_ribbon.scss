@@ -21,20 +21,17 @@
   position: absolute;
   top: 3px;
   left: 0;
-  border-top: 29px solid rgba(0, 0, 0, .3);
-  /* These 4 border properties create the first part of our drop-shadow */
-
-  border-bottom: 29px solid rgba(0, 0, 0, .3);
-  border-right: 29px solid rgba(0, 0, 0, .3);
-  border-left: 29px solid transparent;
+  //border-top: 29px solid rgba(0, 0, 0, .3);
+  //border-bottom: 29px solid rgba(0, 0, 0, .3);
+  //border-right: 29px solid rgba(0, 0, 0, .3);
+  //border-left: 29px solid transparent;
 }
 
 .ribbon-container:after {
   /* This adds the second part of our dropshadow */
-
   content: "";
   height: 3px;
-  background: rgba(0, 0, 0, .3);
+  //background: rgba(0, 0, 0, .3);
   display: block;
   position: absolute;
     bottom: -3px;
@@ -94,16 +91,14 @@
 @media (max-width: 991px) {
   .ribbon-container {
     width: 100%;
-
-    &:before {
-      border-bottom: none;
+    span {
+      margin-left: 0;
+      &:before {
+        border: none;
+      }
+      &:after {
+        border: none;
+      }
     }
-
-    &:after {
-      background: transparent;
-    }
-  }
-  .ribbon-container span:after {
-    border-top: none;
   }
 }

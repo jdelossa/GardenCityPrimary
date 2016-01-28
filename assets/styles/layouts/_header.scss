@@ -46,14 +46,14 @@
     }
 
     .current_page_item{
-      background-color: #B96B43;
+      background-color: $brand-primary-shadow;
       border-radius: 3px;
       text-decoration: none;
     }
     a {
       font-size: 16px;
       &:hover, &:active, &:focus, &:visited {
-        background-color: #B96B43;
+        background-color: $brand-primary-shadow;
         border-radius: 3px;
         text-decoration: none;
       }
@@ -110,6 +110,7 @@
       font-size: 14px;
     }
     ul {
+      bottom: 23px;
       li {
         a {
           font-size: 12px;
@@ -127,12 +128,13 @@
   }
   .navbar-fixed-top {
     .brand {
-      font-size: 11px;
+      font-size: 12px;
     }
     ul {
+      bottom: 22px;
       li {
         a {
-          font-size: 10px;
+          font-size: 11px;
         }
       }
     }
