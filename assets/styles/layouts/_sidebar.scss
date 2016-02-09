@@ -1,5 +1,11 @@
 .sidebar {
-  border-left: $border;
+    background: $white;
+    margin: 25px 0;
+
+    ul, li, p {
+      color: $brand-primary-shadow;
+    }
+
   .textwidget {
     text-align: left;
       .btn-primary {

@@ -4,7 +4,6 @@
   .map-header {
     background-color: $highlight;
     padding: 20px 0;
-    margin: 50px 0 0 0;
     h4 {
       color: $white !important;
       text-align: center;
@@ -26,7 +25,7 @@
   .map {
     pointer-events: none;
     position: relative;
-    bottom: 30px;
+      bottom: 30px;
     #map {
       height: 250px;
     }

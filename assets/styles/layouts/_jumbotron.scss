@@ -1,13 +1,13 @@
 
 /* the jumbotron */
 .container .jumbotron {
-  background-image: url('http://localhost:8888/gardencityprimary/wp-content/uploads/2016/01/OfficeInternal2.jpg');
+  background-image: url('http://gardencity.testing-multisite.dev/wp-content/uploads/sites/2/2016/02/PatientRoom.jpg');
   background-repeat: no-repeat;
-  background-position: center -85px;
+  background-position: center;
   background-size: cover;
   border-bottom: $brand-primary solid 2px;
   border-radius: 0;
-  height: 300px;
+  height: 400px;
 
   .content {
     background-color: rgba(0, 0, 0, 0.5);
@@ -41,7 +41,7 @@
     display: inline-block;
     padding: 10px 0;
     text-align: center;
-    width: 100%;
+    width: 110%;
     a {
       text-decoration: none;
       .label {
@@ -53,8 +53,6 @@
         font-weight: 400;
         padding: 1.2em 1.6em 1.3em;
         text-transform: uppercase;
-        margin-left: 5%;
-        margin-right: 5%;
         width: 90%;
         &:hover, &:active, &:focus {
           background-color: darken($highlight, 10%);

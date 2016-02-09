@@ -34,7 +34,7 @@ body {
   max-width: 100%;
   position: static;
 }
-.patients, .blog, .single, .page-id-94, .contact-us {
+.patients, .blog, .single, .page-id-94, .contact-us, .error404 {
   .wrap {
     padding-top: 20px;
   }
@@ -42,12 +42,15 @@ body {
 .main {
   padding-left: 0;
   padding-right: 0;
-  p {
+  ul, li, p {
+    color: $brand-primary-shadow;
     line-height: 25px;
   }
-}
-.wrap {
-  background-color: $white;
+  .card {
+    background: $white;
+    padding: 15px 20px;
+    margin: 25px 0;
+  }
 }
 
 @media (max-width: 991px){

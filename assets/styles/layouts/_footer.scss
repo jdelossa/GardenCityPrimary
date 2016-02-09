@@ -1,16 +1,13 @@
 
   .content-info {
     .logo {
-      padding: 15px 0;
+      padding: 15px 0 0 0;
       text-align: center;
       width: 100%;
       img {
         text-align: center;
-        width: 275px;
+        width: 400px;
       }
-    }
-    .container {
-      background-color: $white;
     }
     p,a  {
       color: $highlight;
@@ -21,7 +18,7 @@
       }
     }
     .questions {
-      font-size: 10px;
+      font-size: 12px;
     }
   }
 
