@@ -3,6 +3,7 @@
  * Template Name: Home Template
  */
 ?>
+<?php get_template_part('templates/template', 'jumbotron'); ?>
 
 <?php while (have_posts()) : the_post(); ?>
     <div class="col-sm-12">
