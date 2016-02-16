@@ -37,11 +37,11 @@
 .services {
   list-style-type: none;
   padding-left: 0;
+  padding-top: 20px;
   li {
     display: inline-block;
     padding: 10px 0;
-    text-align: center;
-    width: 110%;
+    width: 100%;
     a {
       text-decoration: none;
       .label {
@@ -53,13 +53,13 @@
         font-weight: 400;
         padding: 1.2em 1.6em 1.3em;
         text-transform: uppercase;
-        width: 90%;
+        width: 100%;
         &:hover, &:active, &:focus {
           background-color: darken($highlight, 10%);
           border-color: darken($highlight, 15%);
         }
         .fa {
-          font-size: 20px;
+          font-size: 25px;
           padding: 5px 20px 5px 5px;
         }
       }

@@ -3,12 +3,11 @@
  * Template Name: Home Template
  */
 ?>
-<?php get_template_part('templates/template', 'jumbotron'); ?>
+
 
 <?php while (have_posts()) : the_post(); ?>
     <div class="col-sm-12">
-      <div class="card" style="height: 435px;">
-        <?php get_template_part('templates/page', 'header'); ?>
+      <div class="card" style="height: 375px;">
         <div class="col-sm-4">
           <ul class="services">
             <li><a href="<?= esc_url(home_url('/')); ?>/patients"><span class="label label-default"><i class="fa fa-files-o"></i> Patient Information</span></a></li>
@@ -17,10 +16,17 @@
           </ul>
         </div>
         <div class="col-sm-8">
-          <?php get_template_part('templates/content', 'page'); ?>
+          picture here
         </div>
       </div>
     </div>
+
+  <div class="col-sm-12">
+    <div class="card">
+      <?php get_template_part('templates/page', 'header'); ?>
+      <?php get_template_part('templates/content', 'page'); ?>
+    </div>
+  </div>
 
   <div class="col-sm-4">
     <div class="card">

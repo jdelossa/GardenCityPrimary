@@ -1,7 +1,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
-    <?php get_template_part('templates/page', 'header'); ?>
     <div class="entry-content">
+      <?php get_template_part('templates/page', 'header'); ?>
       <div class="physician-bg">
         <div class="text-center">
           <?= get_the_post_thumbnail( $post->ID, 'full', array ('class' => 'single-image')); ?> 
