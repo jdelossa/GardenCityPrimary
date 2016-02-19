@@ -67,6 +67,7 @@
 }
 @media (max-width: 991px){
   .sidebar {
+    height: 1100px;
     margin-top: 25px;
     text-align: center;
     width: 100%;
@@ -86,6 +87,7 @@
 @media (max-width: 767px){
   .sidebar {
     // to override default
+    height: 850px;
     .rpwwt-widget {
       ul {
         li {

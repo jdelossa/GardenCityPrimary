@@ -21,7 +21,7 @@
 @import "layouts/_pages";
 @import "layouts/_posts";
 @import "layouts/_tinymce";
-@import "layouts/jumbotron";
+@import "layouts/services";
 @import "layouts/insurances";
 
 body {
@@ -43,7 +43,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   ul, li, p {
-    color: $brand-primary-shadow;
+    color: #05121D;
     line-height: 25px;
   }
   .card {

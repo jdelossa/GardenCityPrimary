@@ -8,18 +8,18 @@
 .main, .sidebar {
   /* that font */
   p, ul, ol {
-    color: darken($highlight, 30%);
+    color: $brand-primary;
   }
   /* them headers */
   h1, h2, h3, h4, h5, h6 {
-    color: darken($highlight, 20%);
+    color: #05121D;
   }
   h3 {
     margin-bottom: 25px;
     text-transform: uppercase;
   }
   a {
-    color: $highlight;
+    color: $brand-primary;
   }
 }
 

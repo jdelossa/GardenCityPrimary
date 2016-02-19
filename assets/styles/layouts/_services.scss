@@ -1,39 +1,9 @@
-
-/* the jumbotron */
-.container .jumbotron {
-  background-image: url('http://gardencity.testing-multisite.dev/wp-content/uploads/sites/2/2016/02/PatientRoom.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-bottom: $brand-primary solid 2px;
-  border-radius: 0;
-  height: 400px;
-
-  .content {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 3px;
-    padding: 20px;
-    position: relative;
-    top: 20px;
-    width: 520px;
-    .description {
-      color: $white;
-      text-transform: capitalize;
-    }
-    .mission-statement {
-      padding: 20px 0 40px 0;
-      p {
-        color: $white;
-        font-size: 16px;
-      }
-    }
-    a {
-      color: $white !important;
-    }
+.main {
+  .home-card {
+    height: 375px;
+    padding: 0 !important;
   }
 }
-
-/* the services below jumbotron */
 .services {
   list-style-type: none;
   padding-left: 0;
@@ -70,6 +40,7 @@
 @media (max-width: 1200px) {
   /* the services below jumbotron */
   .services {
+    padding-top: 10px;
     li {
       a {
         .label {
@@ -81,12 +52,21 @@
       }
     }
   }
+  .main {
+    .home-card {
+      height: 320px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
   /* the services below jumbotron */
+  .main {
+    .home-card {
+      height: 620px;
+    }
+  }
   .services {
-    margin-top: 50px;
     margin-bottom: 0;
     li {
       a {
@@ -104,11 +84,15 @@
 
 @media (max-width: 767px) {
   /* the services below jumbotron */
+  .main {
+    .home-card {
+      height: 80%;
+    }
+  }
   .services {
     li {
       display: block;
-      margin: 5%;
-      width: 90%;
+      width: 100%;
       a {
         .label {
           font-size: 11px;

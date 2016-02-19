@@ -1,5 +1,6 @@
-<div class="card" style="">
+<div class="card">
   <?php get_template_part('templates/page', 'header'); ?>
+  <?php $post = get_post(95); $content = apply_filters('the_content', $post->post_content); echo $content;?>
 </div>
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">

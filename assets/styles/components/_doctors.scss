@@ -2,7 +2,7 @@
 .single {
   .entry-content {
     background: $white;
-    padding: 15px;
+    padding: 15px 15px 45px 15px;
   }
   .physician-bg {
     background: url("/../wp-content/uploads/sites/2/2016/02/Physician-BG.jpg") no-repeat;
@@ -33,7 +33,7 @@
   .physician-information {
     .header {
       background-color: $off-white;
-      color: darken($highlight, 10%);
+      color: $brand-primary;
       display: inline-block;
       font-size: 16px;
       padding: 5px 10px;
@@ -43,7 +43,7 @@
       margin-bottom: 30px;
     }
     p {
-      color: $highlight;
+      color: $brand-primary;
       padding: 5px 10px;
       margin-bottom: 5px;
     }
@@ -70,11 +70,11 @@
       text-align: center;
       text-transform: uppercase;
       a {
-        color: $highlight;
+        color: $brand-primary;
         width: 300px;
       }
       .specialty {
-        color: $highlight;
+        color: $brand-primary;
         font-size: 11px;
         margin-bottom: 0;
       }
