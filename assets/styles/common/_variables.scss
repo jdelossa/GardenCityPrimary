@@ -6,9 +6,9 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #3B6D98;
-$brand-primary-shadow:  #134877;
-$highlight:             #D08863;
+$brand-primary:         #2a7198;
+$brand-primary-shadow:  darken($brand-primary, 15%);
+$highlight:             #e38143;
 
 // these colors suck
 $off-white:             #F3F0EE;

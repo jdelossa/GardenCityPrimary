@@ -1,59 +1,86 @@
 .header-contact {
-  background-color: $highlight;
-  border-bottom: solid 1px darken($highlight, 5%);
+  background-color: $brand-primary;
+  border-bottom: solid 1px darken($brand-primary, 5%);
   display: inline-block;
-  height: 35px;
+  height: 50px;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   width: 100%;
+  z-index: 1060;
   a {
-    border-left: solid 1px darken($highlight, 5%);
-    font-size: 16px;
-    padding: 5px 20px 5px 10px;
+    border-left: solid 1px darken($brand-primary, 5%);
+    font-size: 18px;
+    padding: 12px 20px 12px 10px;
 
     &:first-child {
-      border-right: solid 1px darken($highlight, 5%);
+      border-right: solid 1px darken($brand-primary, 5%);
     }
 
     &:hover, &:active, &:focus, &:visited {
       text-decoration: none;
     }
     .fa {
-      font-size: 14px;
-      padding: 5px;
+      font-size: 19px;
+      padding: 2px 5px;
+      color: $white;
     }
   }
 }
-.navbar-fixed-top {
-  background-color: $brand-primary;
-  height: 100px;
+.nav-primary {
+  padding-top: 50px;
+}
+.navbar-static-top {
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 180px;
+  z-index: 0;
 
   .brand {
-    font-size: 21px;
-    font-weight: 100;
+    font-size: 24px;
+    font-weight: 600;
     position: relative;
-      top: 11px;
+      bottom: 12px;
+    text-align: center;
     text-transform: uppercase;
+
+    .logo {
+      background: url(../../assets/images/winthrop-logo.png) no-repeat center;
+      display: inline-block;
+      height: 55px;
+      margin: auto;
+      position: relative;
+        top: 15px;
+      width: 100%;
+    }
 
     &:hover, &:active, &:focus, &:visited {
       text-decoration: none;
     }
   }
   ul {
-    float: right;
     position: relative;
-      bottom: 25px;
+    bottom: 85px;
     li {
       display: inline-block;
+      margin: 0 10px;
+    }
+    li#menu-item-28 {
+      margin-right: 175px;
+    }
+    li#menu-item-41 {
+      margin-left: 175px;
     }
 
-    .current_page_item{
-      background-color: $brand-primary-shadow;
+    .current_page_item {
+      background-color: $highlight;
       border-radius: 3px;
       text-decoration: none;
     }
     a {
       font-size: 16px;
       &:hover, &:active, &:focus, &:visited {
-        background-color: $brand-primary-shadow;
+        background-color: $highlight;
         border-radius: 3px;
         text-decoration: none;
       }
@@ -62,6 +89,21 @@
 
   a {
     color: $white;
+  }
+}
+
+.home, .error404 {
+  .navbar-static-top {
+    ul {
+      .current_page_item {
+        background-color: rgba($highlight, 0.8);
+      }
+      a {
+        &:hover, &:active, &:focus, &:visited {
+          background-color: rgba($highlight, 0.8);
+        }
+      }
+    }
   }
 }
 @media (max-width: 991px){
@@ -82,7 +124,7 @@
       }
     }
   }
-  .navbar-fixed-top {
+  .navbar-static-top {
     height: 90px;
     .brand {
       font-size: 16px;
@@ -104,7 +146,7 @@
       padding-right: 0;
     }
   }
-  .navbar-fixed-top {
+  .navbar-static-top {
     height: 80px;
     .brand {
       font-size: 14px;
@@ -126,7 +168,7 @@
       padding-left: 0;
     }
   }
-  .navbar-fixed-top {
+  .navbar-static-top {
     .brand {
       font-size: 12px;
     }

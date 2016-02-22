@@ -1,5 +1,5 @@
 <header class="banner">
-    <nav class="navbar-fixed-top">
+    <nav class="navbar-static-top">
       <div class="header-contact">
         <div class="container">
         <a href="tel:<?php echo (get_option('qs_contact_phone')); ?>" class="pull-right"><i class="fa fa-phone"></i><span class="phone"> <?php echo (get_option('qs_contact_phone')); ?></span></a>
@@ -8,12 +8,16 @@
       </div>
       <div class="nav-primary">
         <div class="container">
-          <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-          <?php
-          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'class' => 'pull-right']);
-          endif;
-          ?>
+          <div class="row">
+            <div class="col-xs-9 col-centered">
+              <a class="brand" href="<?= esc_url(home_url('/')); ?>"><span class="logo"></span>Garden City Primary </br>Medical Care</a>
+              <?php
+              if (has_nav_menu('primary_navigation')) :
+                wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'class' => 'pull-right']);
+              endif;
+              ?>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
