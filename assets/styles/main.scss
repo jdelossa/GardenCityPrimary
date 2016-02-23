@@ -21,8 +21,8 @@
 @import "layouts/_pages";
 @import "layouts/_posts";
 @import "layouts/_tinymce";
-@import "layouts/services";
 @import "layouts/insurances";
+@import "layouts/home";
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -36,41 +36,5 @@ body {
 .patients, .blog, .single, .page-id-94, .contact-us, .error404 {
   .wrap {
     padding-top: 20px;
-  }
-}
-.main {
-  padding-left: 0;
-  padding-right: 0;
-  ul, li, p {
-    color: #05121D;
-    line-height: 25px;
-  }
-  .card {
-    background: $white;
-    padding: 15px 20px;
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 991px){
-  body {
-    padding-top: 90px;
-  }
-  .home .main .col-sm-8 img {
-    margin: 5px;
-    width: 70%;
-  }
-}
-@media (max-width: 767px) {
-  .garden-office {
-    text-align: center;
-    img {
-      margin: 10px;
-    }
-  }
-}
-@media (max-width: 480px){
-  body {
-    padding-top: 80px;
   }
 }

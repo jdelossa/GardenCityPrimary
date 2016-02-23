@@ -10,19 +10,20 @@
         <?php get_template_part('templates/content', 'page'); ?>
     </div>
 
-    <div class="card">
-        <div class="page-header">
-            <h3><?php $post = get_post(31); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <img src="../wp-content/uploads/sites/2/2016/02/OfficePhoto2.jpg" alt="Office Photo" width="100%" height="145px" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficePhoto2.jpg" />
+            </div>
         </div>
-        <?php $post = get_post(31); $content = apply_filters('the_content', $post->post_content); echo $content;?>
+        <div class="col-sm-6">
+            <div class="card">
+                <img src="../wp-content/uploads/sites/2/2016/02/OfficeInternal4.jpg" alt="Office Internal" width="100%" height="145px" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficeInternal4.jpg" />
+            </div>
+        </div>
     </div>
 
-    <div class="card">
-        <div class="page-header">
-            <h3><?php $post = get_post(33); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
-        </div>
-        <?php $post = get_post(33); $content = apply_filters('the_content', $post->post_content); echo $content;?>
-    </div>
 
     <div class="card">
         <div class="page-header">

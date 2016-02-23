@@ -1,5 +1,6 @@
 
   .content-info {
+    margin-bottom: 15px;
     .logo {
       padding: 15px 0 0 0;
       text-align: center;
@@ -9,12 +10,15 @@
         width: 400px;
       }
     }
+    a {
+      text-decoration: underline;
+    }
     p,a  {
-      color: $highlight;
+      color: $brand-primary;
       text-transform: uppercase;
 
       .privacy {
-        color: $highlight;
+        color: $brand-primary;
       }
     }
     .questions {

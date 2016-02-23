@@ -3,7 +3,7 @@
     <div class="col-xs-12">
         <div class="card">
             <div class="map-header">
-                <h4>We are located in <?php echo (get_option('qs_contact_city')); ?></h4>
+                <h3>We are located in <?php echo (get_option('qs_contact_city')); ?></h3>
             </div>
             <div class="map-pointer"></div>
             <div class="map">

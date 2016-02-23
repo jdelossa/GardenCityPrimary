@@ -74,4 +74,14 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  /* Custom */
+
+  if ($('body').hasClass('home') || $('body').hasClass('error404')){
+    $('.background-image').addClass('background');
+  }
+
 })(jQuery); // Fully reference jQuery after this point.
+
+
+
+

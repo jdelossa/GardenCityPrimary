@@ -7,33 +7,49 @@
 
 <?php while (have_posts()) : the_post(); ?>
   <div class="col-sm-12">
+    <div class="home-container">
+     <h2><?php bloginfo('description'); ?></h2>
       <h4>We emphasize preventive medicine.</h4>
+      <ul class="contact-cta">
+        <li><a href="<?= esc_url(home_url('/')); ?>/contact-us"><span class="label label-default">Request An Appointment</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-sm-8">
+    <div class="card">
+      <?php get_template_part('templates/page', 'header'); ?>
       <?php get_template_part('templates/content', 'page'); ?>
+
+
+      <div class="home-header">
+        <h3><i class="fa fa-heartbeat"></i><?php $post = get_post(31); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
+      </div>
+      <?php $post = get_post(31); $content = apply_filters('the_content', $post->post_content); echo $content;?>
+
+
+
+      <div class="home-header">
+        <h3><i class="fa fa-user-md"></i><?php $post = get_post(33); $title = apply_filters('the_title', $post->post_title); echo $title;?></h3>
+      </div>
+      <?php $post = get_post(33); $content = apply_filters('the_content', $post->post_content); echo $content;?>
+
+    </div>
   </div>
 
   <div class="col-sm-4">
     <div class="card">
-      <img src="../wp-content/uploads/sites/2/2016/02/OfficeExternal2.jpg" alt="" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficeExternal2.jpg" />
+      <img src="../wp-content/uploads/sites/2/2016/02/OfficeInternal.jpg" alt="Office Internal" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficeInternal.jpg" />
     </div>
-  </div>
-  <div class="col-sm-4">
     <div class="card">
-      <img src="../wp-content/uploads/sites/2/2016/02/OfficeInternal.jpg" alt="" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficeInternal.jpg" />
+      <img src="../wp-content/uploads/sites/2/2016/02/Reception.jpg" alt="Reception Area" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/Reception.jpg" />
     </div>
-  </div>
-  <div class="col-sm-4">
     <div class="card">
-      <img src="../wp-content/uploads/sites/2/2016/02/Reception.jpg" alt="" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/Reception.jpg" />
+      <img src="../wp-content/uploads/sites/2/2016/02/PatientRoom.jpg" alt="Patient Room" width="100%" height="100%" data-featherlight="../wp-content/uploads/sites/2/2016/02/PatientRoom.jpg" />
     </div>
   </div>
 
-    <?php get_template_part('templates/page', 'map'); ?>
-    
-    <ul class="contact-cta">
-      <li><a href="<?= esc_url(home_url('/')); ?>/contact-us"><span class="label label-default">Request An Appointment</span></a></li>
-      <li><a href="tel:<?php echo (get_option('qs_contact_phone')); ?>"><span class="label label-primary">Call Us: <?php echo (get_option('qs_contact_phone')); ?></span></a></li>
-    </ul>
-
+  <?php get_template_part('templates/page', 'map'); ?>
 
 <?php endwhile; ?>
 

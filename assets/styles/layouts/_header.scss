@@ -32,7 +32,7 @@
   padding-top: 50px;
 }
 .navbar-static-top {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color:rgba(42, 113, 152, 0.75);
   height: 180px;
   z-index: 0;
 
@@ -42,10 +42,10 @@
     position: relative;
       bottom: 12px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     .logo {
-      background: url(../../assets/images/winthrop-logo.png) no-repeat center;
+      background: url(/wp-content/themes/gardencityprimary/assets/images/winthrop-logo.png) no-repeat center;
       display: inline-block;
       height: 55px;
       margin: auto;
@@ -94,6 +94,7 @@
 
 .home, .error404 {
   .navbar-static-top {
+    background-color: rgba(0, 0, 0, 0.35);
     ul {
       .current_page_item {
         background-color: rgba($highlight, 0.8);

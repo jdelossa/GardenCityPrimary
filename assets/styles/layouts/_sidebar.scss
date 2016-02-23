@@ -22,7 +22,7 @@
   }
   img {
     padding: 15px 0;
-    width: 359px;
+    width: 341px;
   }
   .rpwwt-widget {
     ul {
@@ -63,6 +63,12 @@
     img {
       width: 295px;
     }
+  }
+}
+@media (min-width: 992px) {
+  .sidebar {
+    width: 31.8%;
+    margin-left: 1.5%;
   }
 }
 @media (max-width: 991px){
