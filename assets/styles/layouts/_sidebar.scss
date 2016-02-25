@@ -61,7 +61,18 @@
 @media (max-width: 1200px){
   .sidebar {
     img {
-      width: 295px;
+      width: 280px;
+    }
+    .rpwwt-widget {
+      ul {
+        li {
+          width: 50%;
+        }
+      }
+    }
+    #rpwwt-recent-posts-widget-with-thumbnails-2 img {
+      margin-left: 5%;
+      width: 90%;
     }
   }
 }
@@ -74,9 +85,10 @@
 @media (max-width: 991px){
   .sidebar {
     height: 1100px;
-    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -20px;
     text-align: center;
-    width: 100%;
     .textwidget {
       text-align: center;
     }
@@ -84,6 +96,13 @@
       width: 400px;
     }
     // to override default
+    .rpwwt-widget {
+      ul {
+        li {
+          width: 33%;
+        }
+      }
+    }
     #rpwwt-recent-posts-widget-with-thumbnails-2 img {
       height: 220px;
       width: 200px;

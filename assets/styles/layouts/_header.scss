@@ -32,44 +32,28 @@
   padding-top: 50px;
 }
 .navbar-static-top {
-  background-color:rgba(42, 113, 152, 0.75);
-  height: 180px;
+  background-color:darken($brand-primary, 3%);
+  height: 130px;
   z-index: 0;
 
   .brand {
     font-size: 24px;
     font-weight: 600;
     position: relative;
-      bottom: 12px;
-    text-align: center;
+      top: 20px;
     text-transform: capitalize;
-
-    .logo {
-      background: url(/wp-content/themes/gardencityprimary/assets/images/winthrop-logo.png) no-repeat center;
-      display: inline-block;
-      height: 55px;
-      margin: auto;
-      position: relative;
-        top: 15px;
-      width: 100%;
-    }
 
     &:hover, &:active, &:focus, &:visited {
       text-decoration: none;
     }
   }
   ul {
+    float: right;
     position: relative;
-    bottom: 85px;
+      bottom: 15px;
     li {
       display: inline-block;
       margin: 0 10px;
-    }
-    li#menu-item-28 {
-      margin-right: 175px;
-    }
-    li#menu-item-41 {
-      margin-left: 175px;
     }
 
     .current_page_item {
@@ -79,8 +63,10 @@
     }
     a {
       font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
       &:hover, &:active, &:focus, &:visited {
-        background-color: $highlight;
+        background-color: lighten($highlight, 2.5%);
         border-radius: 3px;
         text-decoration: none;
       }
@@ -91,30 +77,14 @@
     color: $white;
   }
 }
-
-.home, .error404 {
-  .navbar-static-top {
-    background-color: rgba(0, 0, 0, 0.35);
-    ul {
-      .current_page_item {
-        background-color: rgba($highlight, 0.8);
-      }
-      a {
-        &:hover, &:active, &:focus, &:visited {
-          background-color: rgba($highlight, 0.8);
-        }
-      }
-    }
-  }
-}
 @media (max-width: 991px){
   .header-contact {
     a {
       display: inline-block;
-      padding: 3px 20px 3px 10px;
-      width: 48px;
+      padding: 10px 25px 10px 15px;
+      width: 60px;
       .fa {
-        font-size: 18px;
+        font-size: 25px;
       }
       .fa-map-marker {
         position: relative;
@@ -126,13 +96,15 @@
     }
   }
   .navbar-static-top {
-    height: 90px;
+    height: 110px;
     .brand {
-      font-size: 16px;
-      top: -35px;
+      font-size: 20px;
+      position: fixed;
+        top: 9px;
+      z-index: 1065;
     }
     ul {
-      bottom: 21px;
+      top: 7px;
       float: none;
       margin: auto;
       text-align: center;
@@ -140,7 +112,13 @@
     }
   }
 }
-
+@media(max-width: 767px){
+  .navbar-static-top {
+    .brand {
+      padding-left: 15px;
+    }
+  }
+}
 @media (max-width: 480px){
   .header-contact {
     .container {

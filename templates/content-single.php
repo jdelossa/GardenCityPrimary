@@ -2,17 +2,17 @@
   <article <?php post_class(); ?>>
     <div class="entry-content">
       <?php get_template_part('templates/page', 'header'); ?>
-      <div class="physician-bg">
-        <div class="text-center">
+      <div class="">
+
           <?= get_the_post_thumbnail( $post->ID, 'full', array ('class' => 'single-image')); ?> 
+        <div class="content">
+          <?php the_content(); ?>
         </div>
       </div>
 
       <div class="physician-information">
         <div class="separator line-separator"></div>
-        <div class="content">
-          <?php the_content(); ?>
-        </div>
+
         <p class="header">Specialty: </p><p><?= types_render_field("doc-special", array('raw' => 'true')); ?></p>
 
         <?php if (types_render_field("doc-hours", array('raw' => 'true'))) { ?>

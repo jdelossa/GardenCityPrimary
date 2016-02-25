@@ -10,7 +10,7 @@
   z-index: -1;
 }
 .home-container {
-  height: 295px;
+  height: 340px;
   margin: 75px 15px 30px 15px;
   text-align: center;
     h2 {
@@ -23,6 +23,7 @@
     h2, h4 {
       color: $white !important;
       font-weight: 600;
+      text-shadow: $brand-primary 1px 1px;
 
     }
 }
@@ -34,7 +35,7 @@
   li {
     display: inline-block;
     text-align: center;
-    width: 35%;
+    width: 38%;
     a {
       text-decoration: none;
       .label {
@@ -50,29 +51,18 @@
 
         .fa {
           font-size: 20px;
-          padding: 5px 20px 5px 5px;
+          padding: 5px 10px 5px 5px;
         }
       }
       .label-default {
-        background-color: darken($highlight, 5%);
-        border-color: darken($highlight, 10%);
+        background-color: $highlight;
+        border-color: $highlight;
 
         &:hover, &:active, &:focus, &:visited {
-          background-color: darken($highlight, 10%);
-          border-color: darken($highlight, 15%);
+          background-color: darken($highlight, 5%);
+          border-color: darken($highlight, 10%);
         }
       }
-
-      .label-primary {
-        background-color: darken($brand-primary, 5%);
-        border-color: darken($brand-primary, 10%);
-
-        &:hover, &:active, &:focus, &:visited {
-          background-color: darken($brand-primary, 10%);
-          border-color: darken($brand-primary, 15%);
-        }
-      }
-
     }
   }
 }
@@ -84,6 +74,60 @@
     margin-right: 15px;
   }
 }
+.list-one {
+  display: inline-block;
+  width: 50%;
+}
+.list-two {
+  display: inline-block;
+  width: 49%;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    .card {
+      img {
+        height: 171px;
+      }
+    }
+  }
+  .home-header {
+    margin-top: 0;
+  }
+  .home-container {
+    height: 315px;
+    margin: 100px 15px 30px 15px;
+  }
+}
+@media (max-width: 991px){
+  .background {
+    height: 420px;
+    margin-top: 110px;
+  }
+  .home {
+    .card {
+      img {
+        height: 300px;
+      }
+    }
+  }
+  .home-container {
+    height: 315px;
+    margin: 100px 15px 30px 15px;
+  }
+  .contact-cta {
+    li {
+      width: 45%;
+      a {
+        .label {
+          .fa {
+            padding: 5px 10px 5px 0px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 767px) {
   .main {
     .contact-cta {
@@ -93,6 +137,10 @@
         width: 60%;
       }
     }
+  }
+  .list-one, .list-two {
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {

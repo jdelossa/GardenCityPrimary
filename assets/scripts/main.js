@@ -79,6 +79,9 @@
   if ($('body').hasClass('home') || $('body').hasClass('error404')){
     $('.background-image').addClass('background');
   }
+  if($('body').hasClass('single')){
+    $('li#menu-item-41').addClass('current_page_item');
+  }
 
 })(jQuery); // Fully reference jQuery after this point.
 

@@ -35,10 +35,17 @@
 }
 .map {
   #map {
-    height: 500px;
+    height: 555px;
   }
 }
 
+@media (max-width: 1200px){
+  .map {
+    #map {
+      height: 624px;
+    }
+  }
+}
 @media (max-width: 991px){
   .map {
     #map {
