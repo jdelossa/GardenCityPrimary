@@ -12,12 +12,12 @@
 
 
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-6">
             <div class="card">
                 <img src="../wp-content/uploads/sites/2/2016/02/OfficePhoto2.jpg" alt="Office Photo" width="100%" height="145px" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficePhoto2.jpg" />
             </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-6">
             <div class="card">
                 <img src="../wp-content/uploads/sites/2/2016/02/OfficeInternal4.jpg" alt="Office Internal" width="100%" height="145px" data-featherlight="../wp-content/uploads/sites/2/2016/02/OfficeInternal4.jpg" />
             </div>

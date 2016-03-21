@@ -58,9 +58,31 @@
 }
 
 @media (max-width: 767px){
+  .home {
+    .map-header {
+      h3 {
+        font-size: 20px ;
+      }
+    }
+    .map-pointer {
+      top: 62px;
+    }
+  }
   .map {
     #map {
       height: 250px;
     }
+  }
+}
+
+@media (max-width: 480px){
+  .home {
+    .map-header {
+      h3 {
+        font-size: 18px;
+      }
+    }.map-pointer {
+       top: 59px;
+     }
   }
 }

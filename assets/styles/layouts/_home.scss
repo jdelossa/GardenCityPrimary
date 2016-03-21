@@ -68,7 +68,7 @@
 }
 .home-header {
   float: left;
-  margin-top: 26px;
+  margin-top: 33px;
   width: 100%;
   .fa {
     margin-right: 15px;
@@ -129,32 +129,67 @@
   }
 }
 @media (max-width: 767px) {
-  .main {
-    .contact-cta {
-      li {
-        display: block;
-        margin: 10px auto;
-        width: 60%;
-      }
-    }
-  }
   .list-one, .list-two {
     margin-bottom: 0;
     width: 100%;
   }
+  .home {
+    .card {
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .home-container {
+    border-bottom: solid $brand-primary 3px;
+    height: 280px;
+    margin: 50px 15px 0 15px;
+    h2 {
+      font-size: 25px;
+    }
+  }
+  .background {
+    background-position: 0;
+    border-bottom: none;
+  }
+  .contact-cta {
+    li {
+      width: 300px;
+      a {
+        .label {
+          font-size: 14px;
+          .fa {
+            padding: 5px 10px 5px 0px;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
-  .main {
-    .office {
-      height: 300px;
-      width: 90%;
-    }
-    .contact-cta {
-      li {
-        display: block;
-        margin: 10px auto;
-        width: 80%;
+  .contact-cta {
+    li {
+      display: block;
+      margin: 10px auto;
+      width: 275px;
+      a {
+        .label {
+          font-size: 12px;
+          padding: 0.9em 1em 1em;
+        }
       }
+    }
+  }
+
+  .home-container {
+    border-bottom: solid $brand-primary 3px;
+    height: 280px;
+    margin: 50px 15px 0 15px;
+    h2 {
+      font-size: 22px;
+    }
+    h4 {
+      font-size: 15px;
     }
   }
 }

@@ -1,3 +1,8 @@
+.error404 {
+  .background {
+    display: none;
+  }
+}
 .col-centered {
   float: none;
   margin: auto;
@@ -73,6 +78,16 @@ hr {
     .card {
       img {
         height: 147px;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px){
+  .patients {
+    .card {
+      img {
+        height: 100%;
       }
     }
   }

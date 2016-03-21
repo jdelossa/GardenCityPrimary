@@ -10,7 +10,7 @@
     <div class="col-xs-12">
       <div class="home-container">
        <h2><?php bloginfo('description'); ?></h2>
-        <h4>We emphasize preventive medicine.</h4>
+        <?php $post = get_post(23); $content = apply_filters('the_content', $post->post_content); echo $content;?>
         <ul class="contact-cta">
           <li><a href="<?= esc_url(home_url('/')); ?>/contact-us"><span class="label label-default"><i class="fa fa-calendar-plus-o"></i>Request An Appointment</span></a></li>
         </ul>

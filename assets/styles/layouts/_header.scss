@@ -37,10 +37,10 @@
   z-index: 0;
 
   .brand {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     position: relative;
-      top: 20px;
+      top: 17px;
     text-transform: capitalize;
 
     &:hover, &:active, &:focus, &:visited {
@@ -50,7 +50,7 @@
   ul {
     float: right;
     position: relative;
-      bottom: 15px;
+      bottom: 25px;
     li {
       display: inline-block;
       margin: 0 10px;
@@ -117,6 +117,12 @@
     .brand {
       padding-left: 15px;
     }
+    ul {
+      top: 9px;
+      a {
+        font-size: 14px;
+      }
+    }
   }
 }
 @media (max-width: 480px){
@@ -126,34 +132,14 @@
     }
   }
   .navbar-static-top {
-    height: 80px;
     .brand {
-      font-size: 14px;
+      font-size: 12px;
+      top: 14px;
     }
     ul {
       bottom: 23px;
       li {
-        a {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 400px){
-  .header-contact {
-    .container {
-      padding-left: 0;
-    }
-  }
-  .navbar-static-top {
-    .brand {
-      font-size: 12px;
-    }
-    ul {
-      bottom: 22px;
-      li {
+        margin: 0 2.5px;
         a {
           font-size: 11px;
         }
